@@ -1,0 +1,284 @@
+/*!
+ * Bootshadow v1.0.0 - A dark theme for bootstrap 4 components
+ * Licensed under MIT (https://github.com/obrassard/bootshadow/blob/master/LICENSE)
+ * Copyright 2018 Olivier Brassard (https://obrassard.ca)
+ *
+ * This version of bootshadow uses bootstrap v4.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css?family=Chakra+Petch|Jura|VT323|Open+Sans");
+body {
+  color: #efefef;
+  background-color: #1c1f22;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #efefef;
+  font-family: "Chakra Petch", "Jura";
+}
+
+p {
+  color: #efefef;
+  font-family: "Jura", "Open Sans", sans-serif;
+}
+
+hr {
+  border-top-color: #727272;
+}
+
+table.table-dark, .table-dark {
+  -webkit-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+table.table-dark thead th, .table-dark thead th {
+  font-family: "Chakra Petch", "Jura";
+  background: #2C2F33;
+  border-top: 0px;
+}
+table.table-dark tbody th, .table-dark tbody th {
+  font-family: "Chakra Petch", "Jura";
+}
+table.table-dark tbody td, .table-dark tbody td {
+  font-family: "Jura", "Open Sans", sans-serif;
+}
+
+thead tr:first-child th:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+thead tr:first-child th:last-child {
+  border-radius: 0 10px 0 0;
+}
+
+.alert {
+  -webkit-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.25);
+  font-family: "Chakra Petch", "Jura";
+  border-radius: 10px;
+}
+
+.badge {
+  -webkit-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.25);
+  border: solid 1px;
+}
+
+.badge-primary,
+.alert-primary {
+  color: white;
+  background-color: #065dfa;
+  border-color: #1e72ff;
+}
+
+.badge-secondary,
+.alert-secondary {
+  color: white;
+  background-color: #e46b0f;
+  border-color: #ff8711;
+}
+
+.badge-success,
+.alert-success {
+  color: white;
+  background-color: #0bc41c;
+  border-color: #1de305;
+}
+
+.badge-danger,
+.alert-danger {
+  color: white;
+  background-color: #e42a1d;
+  border-color: #ff0e05;
+}
+
+.badge-warning,
+.alert-warning {
+  color: black;
+  background-color: #f0b404;
+  border-color: #ffe10b;
+}
+
+.badge-info,
+.alert-info {
+  color: white;
+  background-color: #11b5ce;
+  border-color: #0eebff;
+}
+
+.badge-light,
+.alert-light {
+  color: #272727;
+  background-color: #e8e8e8;
+  border-color: #fff;
+}
+
+.badge-dark,
+.alert-dark {
+  color: white;
+  background-color: #2C2F33;
+  border-color: #111;
+}
+
+.btn {
+  font-family: "Chakra Petch", "Jura";
+  border: solid 2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:active {
+  box-shadow: none;
+  margin-bottom: -3px;
+  margin-top: 3px;
+}
+
+.btn-primary {
+  color: white;
+  border: none;
+  box-shadow: 0 3px 0 0 #1130b6;
+  background-color: #065dfa;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: #1168ff !important;
+}
+
+.btn-secondary {
+  border: none;
+  box-shadow: 0 3px 0 0 #a64d14;
+  color: white;
+  background-color: #e46b0f;
+}
+
+.btn-secondary:hover,
+.btn-secondary:active {
+  background-color: #ff8711 !important;
+}
+
+.btn-success {
+  border: none;
+  box-shadow: 0 3px 0 0 #296f1c;
+  color: white;
+  background-color: #0bc41c;
+}
+
+.btn-success:hover,
+.btn-success:active {
+  background-color: #1de305 !important;
+}
+
+.btn-danger {
+  border: none;
+  box-shadow: 0 3px 0 0 #670422;
+  color: white;
+  background-color: #e42a1d;
+}
+
+.btn-danger:hover,
+.btn-danger:active {
+  background-color: #ff0e05 !important;
+}
+
+.btn-warning {
+  border: none;
+  box-shadow: 0 3px 0 0 #977103;
+  color: black;
+  background-color: #f0b404;
+}
+
+.btn-warning:hover,
+.btn-warning:active {
+  background-color: #ffe10b !important;
+}
+
+.btn-info {
+  border: none;
+  box-shadow: 0 3px 0 0 #0b7484;
+  color: white;
+  background-color: #11b5ce;
+}
+
+.btn-info:hover,
+.btn-info:active {
+  background-color: #0eebff !important;
+}
+
+.btn-light {
+  border: none;
+  box-shadow: 0 3px 0 0 #8e8e8e;
+  color: #272727;
+  background-color: #e8e8e8;
+}
+
+.btn-light:hover,
+.btn-light:active {
+  background-color: #fff !important;
+}
+
+.btn-dark {
+  border: none;
+  box-shadow: 0 3px 0 0 #000000;
+  color: white;
+  background-color: #101010;
+}
+
+.btn-dark:hover,
+.btn-dark:active {
+  background-color: #181818 !important;
+}
+
+.card {
+  -webkit-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #2C2F33;
+  border: 0.5px solid #101010;
+}
+.card .card-header {
+  color: #efefef;
+  border-radius: 10px 10px 0 0;
+  border-bottom-color: #101010;
+  background-color: #27292c;
+}
+.card .card-body {
+  color: #efefef;
+  font-family: "Jura", "Open Sans", sans-serif;
+}
+
+label,
+small {
+  color: #efefef;
+  font-family: "Chakra Petch", "Jura";
+  padding-left: 2.5px;
+}
+
+label {
+  margin-bottom: 0.25rem;
+}
+
+.form-control,
+.form-control:focus {
+  caret-color: rgba(20, 133, 253, 0.973);
+  background-color: #000000;
+  border-color: #2C2F33;
+  color: #efefef;
+  border-radius: 8px;
+  font-family: "Jura", "Open Sans", sans-serif;
+  height: calc(2.25rem + 7px);
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.1rem rgba(20, 133, 253, 0.973);
+}
+
+/*# sourceMappingURL=bootshadow.css.map */

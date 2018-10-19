@@ -1,0 +1,314 @@
+/*!
+ * Bootshadow v1.0.0 - A dark theme for bootstrap 4 components
+ * Licensed under MIT (https://github.com/obrassard/bootshadow/blob/master/LICENSE)
+ * Copyright 2018 Olivier Brassard (https://obrassard.ca)
+ *
+ * This version of bootshadow uses bootstrap v4.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch|Jura|VT323|Open+Sans');
+
+$background-dark: #2C2F33;
+$background-darker : rgb(28, 31, 34) ;
+$accent-color : #d62929;
+$focus-color : rgba(20, 133, 253, 0.973);
+$light-text : #efefef;
+$title-font : 'Chakra Petch', 'Jura' ;
+$text-font : 'Jura', 'Open Sans', sans-serif;
+
+@mixin fluid-transition {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+@mixin contact-shadow {
+    -webkit-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.25);
+}
+
+body{
+    color: $light-text;
+    background-color: $background-darker;
+}
+
+//Text + Headers
+
+h1, h2, h3, h4, h5, h6{
+    color: $light-text;
+    font-family: $title-font;
+}
+
+p{
+    color: $light-text;
+    font-family: $text-font;
+}
+
+hr{
+    border-top-color: rgb(114, 114, 114);
+}
+
+//Table
+
+table.table-dark, .table-dark{
+    @include contact-shadow();
+    border-radius: 10px;
+    thead{
+        th{
+            font-family: $title-font ;
+            background: $background-dark;
+            border-top: 0px;
+        }
+    }
+    tbody{
+        th{
+            font-family: $title-font;
+        }
+        td{
+            font-family: $text-font; 
+        }
+    }
+}
+
+thead tr:first-child th:first-child{
+    border-radius: 10px 0 0 0;
+}
+thead tr:first-child th:last-child{
+    border-radius: 0 10px 0 0;
+}
+
+//Alerts + Badges
+.alert{
+    @include contact-shadow();
+    font-family: $title-font;
+    border-radius: 10px;
+}
+
+.badge{
+    @include contact-shadow();
+    //font-family: '$title-font';
+    border: solid 1px;
+}
+
+.badge-primary,
+.alert-primary{
+    color: white;
+    background-color: #065dfa;
+    border-color: #1e72ff;
+}
+
+.badge-secondary,
+.alert-secondary{
+    color: white;
+    background-color: #e46b0f;
+    border-color: #ff8711;
+}
+
+.badge-success,
+.alert-success{
+    color: white;
+    background-color: #0bc41c;
+    border-color: #1de305;
+}
+
+.badge-danger,
+.alert-danger{
+    color: white;
+    background-color: #e42a1d;
+    border-color: #ff0e05;
+}
+
+.badge-warning,
+.alert-warning{
+    color: black;
+    background-color: #f0b404;
+    border-color: #ffe10b;
+    
+}
+
+.badge-info,
+.alert-info{
+    color: white;
+    background-color: #11b5ce;
+    border-color: #0eebff;
+}
+
+.badge-light,
+.alert-light{
+    color: #272727;
+    background-color: #e8e8e8;
+    border-color: #fff;
+}
+
+.badge-dark,
+.alert-dark{
+    color: white;
+    background-color: $background-dark;
+    border-color: #111;
+}
+
+
+// Buttons
+.btn{
+    font-family: $title-font;
+    border: solid 2px;
+    @include fluid-transition();
+}
+
+.btn:active{
+    box-shadow: none;
+    margin-bottom: -3px;
+    margin-top: 3px;
+}
+
+.btn-primary{
+    color: white;
+    border: none;
+    box-shadow: 0 3px 0 0 #1130b6;
+    background-color: #065dfa;
+}
+
+.btn-primary:hover,
+.btn-primary:active{
+    background-color: #1168ff !important;
+}
+
+.btn-secondary{
+    border: none;
+    box-shadow: 0 3px 0 0 #a64d14;
+    color: white;
+    background-color: #e46b0f;
+}
+
+.btn-secondary:hover,
+.btn-secondary:active{
+    background-color: #ff8711 !important;
+}
+
+.btn-success{
+    border: none;
+    box-shadow: 0 3px 0 0 #296f1c;
+    color: white;
+    background-color: #0bc41c;
+}
+
+.btn-success:hover,
+.btn-success:active
+{
+    background-color: #1de305 !important;
+}
+
+.btn-danger{
+    border: none;
+    box-shadow: 0 3px 0 0 #670422;
+    color: white;
+    background-color: #e42a1d;
+}
+
+.btn-danger:hover,
+.btn-danger:active{
+    background-color: #ff0e05 !important;
+}
+
+.btn-warning{
+    border: none;
+    box-shadow: 0 3px 0 0 #977103;
+    color: black;
+    background-color: #f0b404;  
+}
+
+.btn-warning:hover,
+.btn-warning:active{
+    background-color: #ffe10b !important;
+}
+
+.btn-info{
+    border: none;
+    box-shadow: 0 3px 0 0 #0b7484;
+    color: white;
+    background-color: #11b5ce;
+}
+
+.btn-info:hover,
+.btn-info:active{
+    background-color: #0eebff !important;
+}
+
+.btn-light{
+    border: none;
+    box-shadow: 0 3px 0 0 #8e8e8e;
+    color: #272727;
+    background-color: #e8e8e8;
+}
+
+.btn-light:hover,
+.btn-light:active{
+    background-color: #fff !important;
+}
+
+.btn-dark{
+    border: none;
+    box-shadow: 0 3px 0 0 #000000;
+    color: white;
+    background-color: #101010;
+}
+
+.btn-dark:hover,
+.btn-dark:active{
+    background-color: #181818 !important;
+}
+
+//Card
+
+.card{
+    @include contact-shadow();
+    border-radius: 10px;
+    background-color: $background-dark;
+    border: 0.5px solid #101010;
+
+    .card-header{
+        color:$light-text;
+        border-radius: 10px 10px 0 0;
+        border-bottom-color: #101010;
+        background-color:  rgb(39, 41, 44);
+    }
+
+    .card-body{
+        color : $light-text;
+        font-family: $text-font
+    }
+}
+
+
+//Forms
+label,
+small{
+    color: $light-text;
+    font-family: $title-font;
+    padding-left: 2.5px; 
+}
+
+label{
+    margin-bottom: 0.25rem;
+}
+
+.form-control,
+.form-control:focus
+{
+    caret-color: $focus-color;
+    background-color: #000000;
+    border-color: $background-dark;
+    color: $light-text;
+    border-radius: 8px;
+    font-family: $text-font;
+    height: calc(2.25rem + 7px);
+}
+
+.form-control:focus{
+    box-shadow: 0 0 0 0.1rem $focus-color;
+}
