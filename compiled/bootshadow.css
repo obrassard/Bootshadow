@@ -140,7 +140,7 @@ thead tr:first-child th:last-child {
   margin-top: 3px;
 }
 
-.btn-primary {
+.btn-primary, .btn-primary:focus {
   color: white;
   border: none;
   box-shadow: 0 3px 0 0 #1130b6;
@@ -152,7 +152,7 @@ thead tr:first-child th:last-child {
   background-color: #1168ff !important;
 }
 
-.btn-secondary {
+.btn-secondary, .btn-secondary:focus {
   border: none;
   box-shadow: 0 3px 0 0 #a64d14;
   color: white;
@@ -164,7 +164,7 @@ thead tr:first-child th:last-child {
   background-color: #ff8711 !important;
 }
 
-.btn-success {
+.btn-success, .btn-success:focus {
   border: none;
   box-shadow: 0 3px 0 0 #296f1c;
   color: white;
@@ -176,7 +176,9 @@ thead tr:first-child th:last-child {
   background-color: #1de305 !important;
 }
 
-.btn-danger {
+.btn-danger,
+.btn-danger:focus,
+.btn-danger:focus:active {
   border: none;
   box-shadow: 0 3px 0 0 #670422;
   color: white;
@@ -188,7 +190,7 @@ thead tr:first-child th:last-child {
   background-color: #ff0e05 !important;
 }
 
-.btn-warning {
+.btn-warning, .btn-warning:focus {
   border: none;
   box-shadow: 0 3px 0 0 #977103;
   color: black;
@@ -200,7 +202,7 @@ thead tr:first-child th:last-child {
   background-color: #ffe10b !important;
 }
 
-.btn-info {
+.btn-info, .btn-info:focus {
   border: none;
   box-shadow: 0 3px 0 0 #0b7484;
   color: white;
@@ -212,7 +214,7 @@ thead tr:first-child th:last-child {
   background-color: #0eebff !important;
 }
 
-.btn-light {
+.btn-light, .btn-light:focus {
   border: none;
   box-shadow: 0 3px 0 0 #8e8e8e;
   color: #272727;
@@ -224,7 +226,7 @@ thead tr:first-child th:last-child {
   background-color: #fff !important;
 }
 
-.btn-dark {
+.btn-dark, .btn-dark:focus {
   border: none;
   box-shadow: 0 3px 0 0 #000000;
   color: white;
