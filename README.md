@@ -12,7 +12,7 @@ However, *Bootshadow* doesn't include bootstrap's JS scripts, so you will have t
 *Happy coding !*
 
 ### Exemple
-Check an exemple of Bootshadow's components [right here]('https://projects.obrassard.ca/bootshadow') !
+Check an exemple of Bootshadow's components [right here](https://projects.obrassard.ca/Bootshadow) !
 
 ***
 
