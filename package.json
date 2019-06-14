@@ -1,0 +1,22 @@
+{
+  "name": "bootshadow",
+  "version": "1.0.0",
+  "description": "### Getting started You can use *Bootshadow* the same way you usually use Boostrap 4,  since this theme uses the same html classes name than Bootstrap.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obrassard/Bootshadow.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/obrassard/Bootshadow/issues"
+  },
+  "homepage": "https://github.com/obrassard/Bootshadow#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
